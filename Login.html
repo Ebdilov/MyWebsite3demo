@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xidmetim.az | Login</title>
+<style>
+    /* Brend rəngləri */
+    :root {
+        --green: #28a745;
+        --yellow: #ffc107;
+        --dark-bg: #f4f6f8;
+        --input-bg: #ffffff;
+        --input-border: #d1d5db;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #e0f7ea, #fff8e1);
+    }
+
+    .login-container {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        width: 380px;
+        padding: 40px 30px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .slogan {
+        font-size: 14px;
+        color: #6b7280;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        color: var(--green);
+        margin-bottom: 25px;
+        font-weight: 600;
+    }
+
+    input[type="email"], input[type="password"] {
+        width: 100%;
+        padding: 12px 15px;
+        margin: 10px 0;
+        border-radius: 8px;
+        border: 1px solid var(--input-border);
+        background: var(--input-bg);
+        font-size: 14px;
+    }
+
+    .checkbox-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+        margin: 10px 0 20px 0;
+    }
+
+    .checkbox-container input {
+        margin-right: 5px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background: var(--green);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    button:hover {
+        background: #218838;
+    }
+
+    .links {
+        margin-top: 15px;
+        font-size: 13px;
+    }
+
+    .links a {
+        color: var(--green);
+        text-decoration: none;
+        margin: 0 5px;
+    }
+
+    .illustration {
+        margin-top: 20px;
+    }
+
+    .illustration img {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+</style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="logo.png" alt="Xidmetim.az Logo" class="logo">
+        <div class="slogan">Xidmətim bir toxunuş uzağında</div>
+        <h2>Hesabınıza daxil olun</h2>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Şifrə" required>
+            <div class="checkbox-container">
+                <label><input type="checkbox"> Yadda saxla</label>
+                <a href="#">Şifrəni unutdum?</a>
+            </div>
+            <button type="submit">Daxil ol</button>
+        </form>
+        <div class="links">
+            Hesabınız yoxdur? <a href="#">Qeydiyyatdan keçin</a>
+        </div>
+        <div class="illustration">
+            <img src="service-illustration.png" alt="Xidmət illüstrasiyası">
+        </div>
+    </div>
+</body>
+</html>
